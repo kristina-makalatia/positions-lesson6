@@ -1,0 +1,123 @@
+/*Base classes*/
+.container {
+	width: 1324px;
+	margin: 0 auto;
+	background-color: yellow;
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+/*Float*/
+.line-1::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.line-2::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.left-block {
+	width: 636px;
+	background-color: aqua;
+}
+.right-block {
+	width: 636px;
+	background-color: blue;
+}
+
+/*Pseudo elements*/
+.test1,
+.divider,
+.test2 {
+	display: inline-block;
+}
+/*.test1::after {
+	content: ' ';
+	width: 2px;
+	height: 30px;
+	background-color: blue;
+	display: inline-block;
+}*/
+/*.divider {
+	width: 2px;
+	height: 30px;
+	background-color: blue;
+}*/
+.test1::before {
+	content: url('https://www.w3schools.com/css/smiley.gif');
+	
+}
+.test1::after {
+	content: ' \00A9';
+	
+}
+
+/*.line-horizontal {
+	display: inline-block;
+	width: 47px;
+	height: 4px;
+	background-color: #FF7A00;
+	margin-left:18px;
+}*/
+.read::after {
+	content: ' ';
+	width: 47px;
+	height: 4px;
+	background-color: #FF7A00;
+	display: inline-block;
+	margin-left: 18px;
+}
+
+/*Positions*/
+.box-wraper {
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+}
+.box1 {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	right:0;
+	bottom: 0;
+}
+.box2 {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	z-index: 15;
+}
+.box3 {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	position: absolute;
+	top: 120px;
+	left: 180px;
+	z-index: 10;
+}
+.text-image {
+	position: absolute;
+	top: 50px;
+	left:50px;
+	color: #fff;
+}
+.image-wraper {
+	position: relative;
+}
+.image-block {
+	width: 100%;
+}
